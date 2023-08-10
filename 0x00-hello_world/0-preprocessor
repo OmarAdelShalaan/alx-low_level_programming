@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Get the C file name from the variable
+CFILE="$1"
+
+# Check if the C file name is provided
+if [ -z "$CFILE" ]; then
+  echo "Usage: $0 <c_file_name>"
+  exit 1
+fi
+
+# Run the C file through the preprocessor and save the output
+gcc -E "$CFILE" -o c
