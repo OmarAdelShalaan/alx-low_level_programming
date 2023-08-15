@@ -1,19 +1,19 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Entry Point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i = 0;
+	signed int a = 48;
 
-	for (i = 0; i < 10; ++i)
+	while (a <= 57)
 	{
-		printf("%d", i);
+		putchar(a);
+		a++;
 	}
-	printf("\n");
+	putchar(10);
 	return (0);
 }
