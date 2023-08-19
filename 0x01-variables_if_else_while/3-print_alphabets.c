@@ -1,23 +1,25 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Entry Point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i = 0;
+	signed int l = 97;
+	signed int u = 65;
 
-	for (i = 0; i < 26; ++i)
+	while (l < 123)
 	{
-		printf("%c", i + 'a');
+		putchar(l);
+		l++;
 	}
-	for (i = 0; i < 26; ++i)
+	while (u < 91)
 	{
-		printf("%c", i + 'A');
+		putchar(u);
+		u++;
 	}
-	printf("\n");
+	putchar(10);
 	return (0);
 }

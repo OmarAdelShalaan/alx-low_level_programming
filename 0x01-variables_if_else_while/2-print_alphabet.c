@@ -1,19 +1,19 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Entry Point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i = 0;
+	signed int a = 97;
 
-	for (i = 0; i < 26; ++i)
+	while (a < 123)
 	{
-		printf("%c", i + 'a');
+		putchar(a);
+		a++;
 	}
-	printf("\n");
+	putchar(10);
 	return (0);
 }

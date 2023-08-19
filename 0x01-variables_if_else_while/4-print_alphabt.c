@@ -1,21 +1,21 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Entry Point
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int i = 0;
+	signed int i;
 
-	for (i = 0; i < 26; ++i)
+	for (i = 97; i <= 122; i++)
 	{
-		if ((i + 'a' == 'q') || (i + 'a' == 'e'))
+		if (i == 101 || i == 113)
 			continue;
-		printf("%c", i + 'a');
+		else
+			putchar(i);
 	}
-	printf("\n");
+	putchar(10);
 	return (0);
 }
