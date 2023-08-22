@@ -2,12 +2,10 @@
 
 /**
  * reset_to_98 - Reset n to 98
- * @n 
+ * @n
  * return: void
  */
 void reset_to_98(int *n)
 {
-	int *ptr = n;
-
-	*ptr = 98;
+	*n = 98;
 }
