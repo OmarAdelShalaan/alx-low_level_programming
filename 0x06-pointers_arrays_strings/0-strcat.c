@@ -3,9 +3,10 @@
 
 /**
  * _strcat : strcat - to join to string together
- *
+ * char *dest, char *src 
  * Return: str.
  */
+ 
 char *_strcat(char *dest, char *src)
 {
     int i = 0;
@@ -19,5 +20,6 @@ char *_strcat(char *dest, char *src)
 		i++;
 		j++;
 	}
+	dest[i] = '\0'; 
     return dest;
 }
