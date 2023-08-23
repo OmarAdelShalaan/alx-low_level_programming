@@ -3,7 +3,7 @@
 
 /**
  * _strcat : strcat - to join to string together
- * char *dest, char *src 
+ * char *dest, char *src
  * Return: str.
  */
  

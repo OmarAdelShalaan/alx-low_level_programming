@@ -3,7 +3,7 @@
 
 /**
  * _strncat : strcat - to join to string together with spacific n
- * char *dest, char *src, int n 
+ * char *dest, char *src, int n
  * Return: str.
  */
  
