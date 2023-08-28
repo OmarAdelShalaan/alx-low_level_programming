@@ -7,6 +7,7 @@
  * @c: char will input in memory
  * Return: pointer.
  */
+ 
 char *_strchr(char *s, char c)
 {
 	*s = c;
