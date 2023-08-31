@@ -6,14 +6,14 @@
  * @s : string
  * Return: void
  */
- 
+
 void _print_rev_recursion(char *s)
 {
 	if (*s == '\0')
 	{
-	return ;
+		return;
 	}
 	_print_rev_recursion(++s);
-	printf("%c",*--s);
+	printf("%c", *--s);
 }
 
