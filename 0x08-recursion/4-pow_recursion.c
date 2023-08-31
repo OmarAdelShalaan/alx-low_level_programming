@@ -7,7 +7,7 @@
  * @y : integer power number
  * Return: integer power of number.
  */
- 
+
 int _pow_recursion(int x, int y)
 {
     //static int powResult = 1;
