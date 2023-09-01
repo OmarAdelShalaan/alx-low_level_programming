@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _print_rev_recursion - 1 if the input integer is prime number, otherwise 0.
+ * is_prime_number - 1 if the input integer is prime number, otherwise 0.
  * @n : number
  * Return: integer 0 or 1.
  */
