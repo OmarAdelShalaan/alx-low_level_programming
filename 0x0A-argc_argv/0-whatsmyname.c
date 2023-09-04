@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 /**
- * print_line - draws straight line
- * @n: number of times line should be printed
- *
- * Return: Straight line
+ * main - main fun start code from it
+ * @argc : number of command arguments
+ * @argvf : strings input in command arguments
+ * Return: 0
  */
 
 int main(int argc, char *argv[])
