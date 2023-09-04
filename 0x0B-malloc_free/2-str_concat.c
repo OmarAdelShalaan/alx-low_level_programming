@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 		i++;
 		count++;
 	}
-	char *newStr = (char *)malloc(sizeof(char) * ((count * 2) - 1));
+	char *newStr = (char *)malloc(sizeof(char) * (count + 1));
 
 	if (newStr == NULL)
 	{
@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 		count++;
 	}
 	i = 0;
-	while (s1[i] != '\0')
+	while (s2[i] != '\0')
 	{
 		newStr[count] = s2[i];
 		i++;
