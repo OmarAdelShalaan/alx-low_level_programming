@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
  * main - main fun start code from it
  * @argc : number of command arguments
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return 1;
 	}
-	printf("%d\n", (argv[1] - '0') * (argv[2] - '0'));
+	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	return 0;
 }
 
