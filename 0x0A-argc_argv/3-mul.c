@@ -9,18 +9,12 @@
 
 int main(int argc, char *argv[])
 {
-	unsigned int result = 0;
-
-	if (argc <= 2)
+	if (argc != 3)
 	{
 		printf("Error\n");
-
 		return 1;
 	}
-	result = (int)(argv[1] - '0');	
-	result *= (int)(argv[2] - '0');
-	printf("%d\n", result);
-
+	printf("%d\n", (argv[1] - '0') * (argv[2] - '0'));
 	return 0;
 }
 
