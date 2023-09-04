@@ -32,6 +32,7 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	}
 	i = 0;
+	count = 0;
 	while (s1[i] != '\0')
 	{
 		newStr[count] = s1[i];
