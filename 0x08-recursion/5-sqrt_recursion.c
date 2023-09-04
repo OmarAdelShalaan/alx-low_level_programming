@@ -7,13 +7,13 @@
  * Return: integer square root number
  */
 
-int first_sqrt_recursion(int n, int i);
+int first_sqrt_recursion(int, int);
 
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
 		return (-1);
-	else 
+	else
 		return (first_sqrt_recursion(n, 0));
 }
 
@@ -29,7 +29,7 @@ int first_sqrt_recursion(int n, int i)
 	if (i * i > n)
 		return (-1);
 	else if (i * i == n)
-		return i;
+		return (i);
 	return (first_sqrt_recursion(n, i + 1));
 }
 
