@@ -10,18 +10,15 @@
 
 char *_strdup(char *str)
 {
-	if (str == NULL)
-	{
-		return (NULL);
-	}
 	unsigned int i;
-	char *newStr = (char *)malloc(sizeof(char) * 50);
+	char *newStr = NULL;
 
 	i = 0;
 	while (str[i] != '\0')
 	{
 		i++;
 	}
+	newStr = (char *)malloc(sizeof(char) * ((i * 2) - 1));
 
 	if (newStr == NULL || str == NULL)
 	{
