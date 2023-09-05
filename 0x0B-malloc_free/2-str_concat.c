@@ -14,6 +14,32 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, count = 0;
 	char *newStr = (char *)malloc(sizeof(char) * 50);
 
+	if (s1 == NULL || s2 == NULL)
+	{
+		if (s1 == NULL)
+		{
+			while (s1[i] != '\0')
+			{
+				newStr[count] = s1[i];
+				i++;
+				count++;
+			}
+		}
+		else
+		{
+			i = 0;
+			while (s2[i] != '\0')
+			{
+				newStr[count] = s2[i];
+				i++;
+				count++;
+			}
+		}
+		newStr[count] = '\0';
+		free(s1);
+		free(s2);
+		return (newStr);
+	}
 	i = 0;
 	while (s1[i] != '\0')
 	{
