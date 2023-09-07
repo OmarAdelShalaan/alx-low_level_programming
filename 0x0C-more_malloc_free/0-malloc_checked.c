@@ -17,7 +17,7 @@ void *malloc_checked(unsigned int b)
 	{
 		fail = (int *)malloc(sizeof(int));
 		*fail = 98;
-		return ((void *)fail);
+		return (fail);
 	}
 	return (mem);
 }
