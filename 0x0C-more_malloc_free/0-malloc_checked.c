@@ -10,13 +10,13 @@
 
 void *malloc_checked(unsigned int b)
 {
-	void *mem = malloc(sizeof(int) * b);
+	void *mem = (void *)malloc(sizeof(int) * b);
 	void *fail = NULL;
 
 	if (mem == NULL)
 	{
 		fail = malloc(sizeof(int));
-		*(int*)fail = 98;
+		*(int *)fail = 98;
 		return (fail);
 	}
 	return (mem);
