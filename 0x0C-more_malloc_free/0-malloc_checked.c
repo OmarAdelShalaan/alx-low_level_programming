@@ -10,15 +10,11 @@
 
 void *malloc_checked(unsigned int b)
 {
-	void *mem = (void *)malloc(sizeof(int) * b);
-	int *fail = NULL;
+	void *ptr;
 
-	if (mem == NULL)
-	{
-		fail = (int *)malloc(sizeof(int));
-		*fail = 98;
-		return (fail);
-	}
-	return (mem);
+	ptr = malloc(b);
+
+	if (!ptr)
+		exit(98);
+	return (ptr);
 }
-

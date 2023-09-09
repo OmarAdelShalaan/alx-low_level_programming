@@ -12,20 +12,27 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int i = sizeof(s1), j = 0;
-	s1 = (char *)realloc(s1, sizeof(s1) + n);
+	char *newstr;
+	unsigned int len = n, i;
 
 	if (s1 == NULL)
-	{
-		return (NULL);
-	}
-	while(s2[i] != '\0')
-	{
-		s1[i] = s2[j];
-		i++;
-		j++;
-	}
-	s1[i] = '\0';
-	return (s1);
-}
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
 
+	for (i = 0; s1[i]; i++)
+		len++;
+
+	newstr = malloc(sizeof(char) * (len + 1));
+	if (newstr == NULL)
+		return (NULL);
+	len = 0;
+
+	for (i = 0; s1[i]; i++)
+		newstr[len++] = s1[i];
+
+	for (i = 0; s2[i] && i < n; i++)
+		newstr[len++] = s2[i];
+	newstr[len] = '\0';
+	return (newstr);
+}
