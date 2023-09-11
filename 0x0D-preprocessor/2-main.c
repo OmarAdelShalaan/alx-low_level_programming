@@ -5,13 +5,12 @@
 #define __FILENAME__ (__FILE__)
 
 /**
- * main - that prints the name of the file it was compiled from
- * Return: 0
+ * FileName - that prints the name of the file it was compiled from
+ * Return: void
  */
 
-int main(void)
+void FileName(void)
 {
 	printf("%s\n", __FILENAME__);
-	return (0);
 }
 
