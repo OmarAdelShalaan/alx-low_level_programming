@@ -4,11 +4,11 @@
 #define __FILENAME__ (__FILE__)
 
 /**
- * FileName - that prints the name of the file it was compiled from
+ * main - that prints the name of the file it was compiled from
  * Return: void
  */
 
-void FileName(void)
+void main(void)
 {
 	printf("%s\n", __FILENAME__);
 }
