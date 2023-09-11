@@ -5,11 +5,12 @@
 
 /**
  * main - that prints the name of the file it was compiled from
- * Return: void
+ * Return: int
  */
 
-void main(void)
+int main(void)
 {
 	printf("%s\n", __FILENAME__);
+	return (0);
 }
 
