@@ -1,9 +1,8 @@
-#ifndef  FUN_POINTER_H
-#define  FUN_POINTER_H
+#ifndef pointer_to_function_H
+#define pointer_to_function_H
 
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 int _putchar(char);
 void print_name(char *name, void (*f)(char *));
