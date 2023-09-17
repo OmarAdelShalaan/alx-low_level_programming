@@ -1,4 +1,5 @@
-#define DOG_H
+#ifndef DOG_H_
+#define DOG_H_
 
 /**
  * struct dog - a new type of data
