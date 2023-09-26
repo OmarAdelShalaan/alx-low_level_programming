@@ -3,11 +3,12 @@
 /**
  * print_list - that prints all the elements of a list_t list.
  * @h : List will printed
- * Return: int.
+ * Return: size_t.
  */
+ 
 size_t print_list(const list_t *h)
 {
-	int count = 0;
+	size_t count = 0;
 
 	while (h != NULL)
 	{
