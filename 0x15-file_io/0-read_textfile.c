@@ -5,27 +5,28 @@
  * @filename: pointer to the name of the file
  * @letters: the number of letters it should read and print
  * Return: the actual number of letters it could read and print
-*/
+ */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-        size_t lettersCountRead = 0;
-        size_t lettersCountWrite = 0;
-        int fileD = 0;
-        char *buf = (char *)malloc(letters);
-if (filename == NULL)
-        {
-                return (0);
-        }
+    ssize_t o, r, w;
+    char *buf = NULL;
 
-        fileD = open(filename, O_RDONLY);
-        lettersCountRead = read(filename, buf, letters);
-        lettersCountWrite = write(filename, buf, lettersCountRead);
-        close(fileD);
-        free(buf);
-if (lettersCountWrite != lettersCountRead)
-        {
-                return (0);
-        }
-        return (letters);
+    if (filename == NULL)
+    {
+        return (0);
+    }
+    buf = (char *)malloc(letters);
+    if (buf == NULL)
+		return (0);
+    o = open(filename, O_RDONLY);
+    r = read(filename, buf, letters);
+    w = write(STDOUT_FILENO, buf, letters);
+    close(o);
+    free(buf);
+    if (r == -1 || w == -1)
+    {
+        return (0);
+    }
+    return (w);
 }
