@@ -1,1 +1,4 @@
-# alx-low_level_programming
+# Alx Low Level Programming - C - File I/O
+
+# Omar Adel Shalaan
+
